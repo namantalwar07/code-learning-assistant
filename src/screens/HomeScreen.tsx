@@ -9,7 +9,7 @@ import {
 import LinearGradient from 'react-native-linear-gradient';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { AppColors } from '../theme';
-import { FeatureCard } from '../components';
+import { FeatureCard } from '../components/FeatureCard';
 import { RootStackParamList } from '../navigation/types';
 
 type HomeScreenProps = {
@@ -94,7 +94,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                 onPress={() => navigation.navigate('TextToSpeech')}
               />
             </View>
-            <View style={styles.row}>
+            {/* <View style={styles.row}>
               <FeatureCard
                 title="Pipeline"
                 subtitle="Voice Agent"
@@ -103,8 +103,24 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
                 onPress={() => navigation.navigate('VoicePipeline')}
               />
               <View style={{ flex: 1, margin: 8 }} />
+            </View> */}
+            <View style={styles.row}>
+          <FeatureCard
+            title="Pipeline"
+            subtitle="Voice Agent"
+            icon="pipeline"
+            gradientColors={[AppColors.accentGreen, '#059669']}
+            onPress={() => navigation.navigate('VoicePipeline')}
+           />
+          <FeatureCard
+            title="Learning"
+            subtitle="AI Learning Assistant"
+            icon="book"
+            gradientColors={[AppColors.accentCyan, AppColors.accentViolet]}
+            onPress={() => navigation.navigate('LearningAssistant')}
+            />
             </View>
-          </View>
+        </View>
 
           {/* Model Info Section */}
           <View style={styles.infoSection}>

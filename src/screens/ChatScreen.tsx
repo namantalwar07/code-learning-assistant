@@ -66,7 +66,8 @@ export const ChatScreen: React.FC = () => {
       }
 
       // Get final metrics
-      const finalResult = await streamResult.result;
+      //const finalResult = await streamResult.result;
+      const finalResult: any = await streamResult.result;
 
       // Add assistant message (use ref to get final text due to closure)
       const assistantMessage: ChatMessage = {

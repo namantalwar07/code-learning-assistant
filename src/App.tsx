@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler'; // Must be at the top!
+import { LearningNavigator } from './navigation/LearningNavigator';
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
@@ -104,6 +105,11 @@ const App: React.FC = () => {
               name="VoicePipeline"
               component={VoicePipelineScreen}
               options={{ title: 'Voice Pipeline' }}
+            />
+            <Stack.Screen
+              name="LearningAssistant"
+              component={LearningNavigator}
+              options={{ headerShown: false }}
             />
           </Stack.Navigator>
         </NavigationContainer>

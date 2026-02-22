@@ -17,10 +17,11 @@ class MainApplication : Application(), ReactApplication {
   override val reactNativeHost: ReactNativeHost =
       object : DefaultReactNativeHost(this) {
         override fun getPackages(): List<ReactPackage> =
-            PackageList(this).packages.apply {
-              // Add our custom NativeAudioModule for STT/TTS audio recording and playback
-              add(NativeAudioPackage())
-            }
+          PackageList(this).packages.apply {
+            // Add our custom NativeAudioModule for STT/TTS audio recording and playback
+          add(NativeAudioPackage())
+    }
+
 
         override fun getJSMainModuleName(): String = "index"
 
