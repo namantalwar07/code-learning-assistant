@@ -1,3 +1,256 @@
+# 🚀 Extended Version: Code Learning Assistant
+
+This project extends the original hackathon starter template with:
+- Error Explainer
+- Hint Mode
+- Code Playground
+- Smart Chat
+- Voice Input
+- Learning History
+
+
+
+---
+
+# 🚀 Code Learning Assistant
+
+### On-Device AI Powered Coding Companion (React Native)
+
+An advanced **on-device AI coding assistant** built with React Native and RunAnywhere SDK.
+The app helps developers understand errors, solve problems step-by-step, execute code, and interact with AI — all **without requiring internet access**.
+
+---
+
+## 📱 Features
+
+### 🐛 Error Explainer
+
+* Paste programming errors
+* Choose between **Simple** or **Technical** explanations
+* Supports multiple programming languages
+* Voice input support
+* Text-to-Speech explanation playback
+* Saves explanations to learning history
+
+---
+
+### 💡 Hint Mode (Step-by-Step Learning)
+
+* Guided 4-step hint system:
+
+  1. Strategy Hint
+  2. Pseudocode
+  3. Partial Code
+  4. Full Solution
+* Locked progression (no skipping)
+* Visual progress bar
+* "Try This Code" button to open solution in Playground
+* Saves completed sessions to history
+
+---
+
+### 💬 Smart Chat
+
+* Context-aware AI chat
+* Continue from Error Explainer or Hint Mode
+* Code block detection & syntax highlighting
+* Voice input support
+* Fully on-device inference
+
+---
+
+### ⚡ Code Playground
+
+* JavaScript execution engine (safe sandboxed execution)
+* Python execution support (via native module)
+* Sample code templates
+* Output console with execution time
+* Error handling display
+
+---
+
+### 📚 Learning History
+
+* Stores all:
+
+  * Error explanations
+  * Hint sessions
+  * AI interactions
+* Displays:
+
+  * Total queries
+  * Errors explained
+  * Problems solved
+  * Common topics
+* Tap to view full details
+* Delete individual items
+* Pull-to-refresh support
+
+---
+
+## 🔥 On-Device AI Advantages
+
+This app demonstrates the power of **on-device AI**:
+
+* ✅ No internet required
+* ✅ Zero API cost
+* ✅ Low latency responses
+* ✅ Complete data privacy
+* ✅ Secure local execution
+* ✅ Works offline
+
+All AI inference runs locally using the RunAnywhere SDK.
+
+---
+
+## 🛠 Tech Stack
+
+* React Native (TypeScript)
+* RunAnywhere SDK (On-device LLM)
+* React Navigation (Stack + Tabs)
+* Native Modules (Python execution)
+* Custom Code Parser for code block detection
+* Syntax Highlighting
+* Voice Input (Audio Streaming)
+* Text-to-Speech
+* Safe JavaScript Execution Engine
+
+---
+
+## 🧠 Architecture Overview
+
+```
+User Input
+   ↓
+On-Device LLM (RunAnywhere)
+   ↓
+Response Parser (Code Block Detection)
+   ↓
+UI Rendering (FormattedResponse + CodeBlock)
+   ↓
+Optional: Run in Playground
+```
+
+All processing happens locally on device.
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+ ├── components/
+ │    ├── CodeBlock.tsx
+ │    ├── FormattedResponse.tsx
+ │    ├── VoiceButton.tsx
+ │    └── SpeakerButton.tsx
+ │
+ ├── screens/
+ │    ├── ErrorExplainerScreen.tsx
+ │    ├── HintModeScreen.tsx
+ │    ├── SmartChatScreen.tsx
+ │    ├── CodePlaygroundScreen.tsx
+ │    └── LearningHistoryScreen.tsx
+ │
+ ├── hooks/
+ ├── services/
+ │    └── ExecutionEngine.ts
+ │
+ ├── utils/
+ └── navigation/
+```
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 2️⃣ Clean Android build
+
+```
+cd android
+./gradlew clean
+cd ..
+```
+
+### 3️⃣ Run the app
+
+```
+npx react-native run-android
+```
+
+Make sure emulator or device is running.
+
+---
+
+## 📈 Why This Project Matters
+
+This project demonstrates:
+
+* Real-world React Native architecture
+* AI integration in mobile apps
+* Native module integration
+* Code execution sandboxing
+* Streaming LLM responses
+* TypeScript usage
+* Complex state management
+* UX-focused learning design
+
+## 🎯 Use Case
+
+This app helps:
+
+* Beginner programmers understand errors clearly
+* Students learn step-by-step problem solving
+* Developers test logic instantly
+* Learners practice without internet dependency
+
+Perfect for:
+
+* Offline learning
+* Low connectivity areas
+* Privacy-sensitive environments
+* Cost-efficient AI solutions
+
+---
+
+## 📌 Hackathon Focus
+
+Built as a fully on-device AI coding assistant demonstrating:
+
+* Privacy-first AI
+* Zero cloud dependency
+* Real-time local inference
+* Offline developer tooling
+
+---
+## Future Improvements
+
+* Monaco editor integration
+* Cloud execution environment
+* Multi-language expansion
+* User authentication
+* Cloud sync history
+* iOS Python execution
+
+👨‍💻 Authors
+BUG SLAYERS
+B.Tech CSE | AI + Full Stack Enthusiasts
+Focused on building intelligent developer tools.
+
+⭐ If you found this interesting, feel free to star the repo!
+
+
+
+
+
+
+
 # RunAnywhere React Native Starter App
 
 A comprehensive starter app demonstrating the capabilities of the [RunAnywhere SDK](https://www.npmjs.com/org/runanywhere) - a privacy-first, on-device AI SDK for React Native.
