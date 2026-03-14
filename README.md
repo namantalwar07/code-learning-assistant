@@ -1,6 +1,6 @@
 # 🚀 Extended Version: Code Learning Assistant
 
-This project extends the original hackathon starter template with:
+This project extends the starter template with:
 - Error Explainer
 - Hint Mode
 - Code Playground
@@ -239,7 +239,7 @@ Built as a fully on-device AI coding assistant demonstrating:
 * iOS Python execution
 
 👨‍💻 Authors
-BUG SLAYERS
+One For Code
 B.Tech CSE | AI + Full Stack Enthusiasts
 Focused on building intelligent developer tools.
 
